@@ -1,0 +1,25 @@
+.layout{
+position: relative;
+top: 70px;
+}
+
+.mat-card{
+    height: 250px;
+    width: 400px;
+}
+
+a{
+text-decoration: none;
+position: absolute;
+top: 190px;
+}
+
+button{
+    margin-top: 40px;
+    background-color: white;
+    color: black;
+}
+
+.input:-internal-autofill-selected {
+    background-color: none !important;
+}

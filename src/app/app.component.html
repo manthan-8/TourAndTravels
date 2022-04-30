@@ -1,0 +1,21 @@
+<form [formGroup]="loginForm">
+    <div class="layout" fxLayout="column" fxLayoutAlign="center center"  fxLayoutGap="5px">
+        <img width="180px" src="../assets/3-31745_shopping-cart-icon-blue-hd-png-download.png">
+        <mat-card>
+            <h2>Login</h2>
+            <mat-form-field fxLayout="column">
+                <input formControlName="email" matInput placeholder="Email"/>
+                <mat-error>Valid email is required</mat-error>
+            </mat-form-field>
+            <mat-form-field fxLayout="column">
+                <input formControlName="password" matInput placeholder="Password"/>
+                <mat-error>(8-12 digit) Password is required</mat-error>
+            </mat-form-field>
+            <div><a href="#">Forgot Password?</a></div>
+            <div fxLayout="row" fxLayoutAlign="end"  fxLayoutGap="7px">
+                <button type="Submit" (click)="login()" mat-raised-button color="primary">Login</button>
+                <button href="signup.component.html" mat-raised-button color="primary">Sign-Up</button>
+            </div>
+        </mat-card>
+    </div>
+    </form>
